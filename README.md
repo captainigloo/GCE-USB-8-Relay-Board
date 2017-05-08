@@ -83,14 +83,14 @@ Rajout du mode mémoire : la carte garde la dernière configuration en mémoire 
 ****************
 Code ascii 
 ****************
-M0 // Mode mémore désactivé
-M1 // Mode mémoire activé
+- M0 // Mode mémore désactivé
+- M1 // Mode mémoire activé
 
 ****************
 Code hexa
 ****************
-0x4D 0x30 // Mode mémore désactivé
-0x4D 0x31 // Mode mémoire activé
+- 0x4D 0x30 // Mode mémore désactivé
+- 0x4D 0x31 // Mode mémoire activé
 *******************************************************************************
 
 Rajout d'une commande pour connaitre l'état des relais.
