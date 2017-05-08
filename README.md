@@ -17,7 +17,6 @@ Références:
 http://www.ftdichip.com
 http://www.ftdichip.com/FTDrivers.htm
 
-
 For most of these operating systems two types of driver are available:  
 Virtual COM Port (VCP) drivers and direct (D2XX) drivers.  
 The VCP driver emulates a standard PC serial port such that the USB device 
@@ -29,15 +28,12 @@ of the driver types you wish to use (VCP or D2XX) and then locate
 the appropriate operating systems.  With the exception of Windows 98 and Windows ME, 
 all devices are supported in each driver package.
 
- 
 In addition to the drivers developed by FTDI, there are a number 
 of drivers available which have been developed by third parties. 
 Some of these drivers are listed on our 3rd Par414ty Drivers page.
 
-
-
 *****************************************************************************
-Configuration port série: 1 start, 8 bit, 1 stop (vitesse 9600 bauds)
+Configuration port série : 1 start, 8 bit, 1 stop (vitesse 9600 bauds)
 *****************************************************************************
 La trame est composée de 5 caractères (minuscule ou majuscule) pouvant etre envoyés en ASCII ou en Hexadécimal
 
@@ -49,7 +45,7 @@ Start of frame: RLY
 N° channel: 0 à 8
 CMD: 0 ou 1
 
-Exemple de trame:
+Exemple de trame :
 
 RLY11 // commute le relais 1 en position travail
 RLY10 // commute le relais 1 en position repos
@@ -71,17 +67,17 @@ Exemple de trame:
 0x52 0x4C 0x59 0x31 0x31 // commute le relais 1 en position travail
 0x52 0x4C 0x59 0x31 0x30 // commute le relais 1 en position repos
 0x52 0x4C 0x59 0x32 0x31 // commute le relais 2 en position travail
-...........................................................................
+[...]
 0x52 0x4C 0x59 0x38 0x30 commute le relais 8 en position repos
 
-Pour tout autre caractère ou chaines de caractères la carte renvoi le code suivant:
+Pour tout autre caractère ou chaines de caractères la carte renvoi le code suivant :
 0x0D 0x3F
 
 *******************************************************************************
 Modification du : 04/09/2009
 *******************************************************************************
 
-Rajout du mode mémoire: la carte garde la dernière configuration en mémoire en cas de coupure d'alimentation.
+Rajout du mode mémoire : la carte garde la dernière configuration en mémoire en cas de coupure d'alimentation.
 
 ****************
 Code ascii 
