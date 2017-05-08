@@ -41,9 +41,9 @@ La trame est composée de 5 caractères (minuscule ou majuscule) pouvant etre en
 Code ascii
 ****************
                           
-Start of frame: RLY
-N° channel: 0 à 8
-CMD: 0 ou 1
+- Start of frame: RLY
+- N° channel: 0 à 8
+- CMD: 0 ou 1
 
 Exemple de trame :
 
