@@ -47,11 +47,11 @@ CMD: 0 ou 1
 
 Exemple de trame :
 
-RLY11 // commute le relais 1 en position travail
-RLY10 // commute le relais 1 en position repos
-RLY21 // commute le relais 2 en position travail
-[...]
-RLY80 commute le relais 8 en position repos
+- RLY11 // commute le relais 1 en position travail
+- RLY10 // commute le relais 1 en position repos
+- RLY21 // commute le relais 2 en position travail
+- [...]
+- RLY80 commute le relais 8 en position repos
 
 En cas de mauvaise commande la carte renvoi un retour chariot et le caractère ?
 
