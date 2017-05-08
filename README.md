@@ -5,9 +5,9 @@ GCE USB 8 Relay Board
 ****************************************************************************
 PROTOCOLE DE COMMUNICATION CARTE RELAIS USB
 ****************************************************************************
-Auteur: Patrick Gorce
-Société:GCE.ELECTRONICS
-Le:15/02/2009
+Auteur  : Patrick Gorce
+Société : GCE.ELECTRONICS
+Le      : 15/02/2009
 ****************************************************************************
 
 Les ordres sont envoyées par trame série soit par port série virtuel (driver FTDI vpc) 
@@ -54,7 +54,7 @@ Exemple de trame:
 RLY11 // commute le relais 1 en position travail
 RLY10 // commute le relais 1 en position repos
 RLY21 // commute le relais 2 en position travail
-...........................................................................
+[...]
 RLY80 commute le relais 8 en position repos
 
 En cas de mauvaise commande la carte renvoi un retour chariot et le caractère ?
@@ -66,7 +66,6 @@ Start of frame:  0x52 0x4C 0x59 ou 0x72 0x6C 0x79
 N° channel: 0x31 à 0x38
 Cmd: 0x30 ou 0x31
 
-
 Exemple de trame:
 
 0x52 0x4C 0x59 0x31 0x31 // commute le relais 1 en position travail
@@ -77,12 +76,12 @@ Exemple de trame:
 
 Pour tout autre caractère ou chaines de caractères la carte renvoi le code suivant:
 0x0D 0x3F
+
 *******************************************************************************
-Modification du :04/09/2009
+Modification du : 04/09/2009
 *******************************************************************************
 
 Rajout du mode mémoire: la carte garde la dernière configuration en mémoire en cas de coupure d'alimentation.
-
 
 ****************
 Code ascii 
@@ -99,7 +98,6 @@ Code hexa
 
 Rajout d'une commande pour connaitre l'état des relais.
 
-
 ****************
 Code ascii 
 ****************
@@ -110,6 +108,5 @@ Code hexa
 ****************
 0X3F 0x52 0x4C 0x59 // Renvoi l'état logique des 8 relais sous la forme >00000000   (le caractère le plus  à droite correspond au relais 8)
 
-
 ******************************************************************************
-END
+Fin
